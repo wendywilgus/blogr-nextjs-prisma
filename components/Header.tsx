@@ -3,9 +3,6 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { signOut, useSession } from 'next-auth/react';
 
-//If no user is authenticated, a Log in button will be shown.
-//If a user is authenticated, My drafts, New Post and Log out buttons will be shown.
-
 const Header: React.FC = () => {
   const router = useRouter();
   const isActive: (pathname: string) => boolean = (pathname) =>
